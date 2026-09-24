@@ -5,7 +5,8 @@ import lombok.Getter;
 @Getter
 public class CreditCardProcessorUnavailableException extends RuntimeException {
 
-    public CreditCardProcessorUnavailableException(Throwable cause) {
-        super(cause);
+    public CreditCardProcessorUnavailableException(String message ,Throwable cause) {
+
+        super(message, cause);
     }
 }
